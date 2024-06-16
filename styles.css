@@ -156,7 +156,7 @@ header .option a i {
     transform: scale(1, 0);
     transform-origin: top;
     transition-duration: 0.5s;
-    z-index: 3; 
+    z-index: 101; 
     display: flex;
     flex-direction: column;
 }
@@ -199,7 +199,7 @@ header .option a i {
     transform: scale(1, 0);
     transform-origin: top;
     transition-duration: 0.5s;
-    z-index: 3;
+    z-index: 101;
 }
 
 .currency-submenu table {
@@ -216,11 +216,11 @@ header .option a i {
     border-left: 1px solid #ddd;
 }
 
-.currency-submenu a {
+.currency-submenu tr td a {
     display: flex;
     align-items: center;
     padding: 5px 0;
-    color: black; 
+    color: black; /* Ensure text is black */
 }
 
 .currency-submenu img {
@@ -236,8 +236,6 @@ header .option a i {
 .currency-menu.active .currency-submenu {
     transform: scale(1, 1);
 }
-
-
 
 header .title {
     text-align: center;
@@ -426,7 +424,7 @@ header .background img {
     border-radius: 10px;
 }
 .smallmain1{
-    margin: 20px;
+    width: 100%;
 }
 .smallmain1 img{
     border-radius: 10px;
@@ -906,6 +904,7 @@ header .background img {
     transform: translateX(-10%);
     margin-top: 80px;
     height: 404px;
+    width: 100%;
 }
 .always .back1 img{
     width: 1476px;
@@ -1031,6 +1030,10 @@ footer {
     margin-top: 16px;
     margin-bottom: 20px;
 }
+.coor a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.00);
+}
 .coor span{
     font-size: 16px;
     font-weight: 500;
@@ -1047,6 +1050,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
+    z-index: 2;
 }
 
 
@@ -1116,12 +1120,13 @@ footer {
 .footer-section ul {
     list-style-type: none;
     padding: 0;
+    text-align: left;
     
 }
 
 .footer-section ul li {
     margin-bottom: 20px;  
-    margin-right: 150px; 
+    margin-right: 50px; 
     margin-left: 0;
     padding-left: 0;
 }
@@ -1149,5 +1154,3 @@ footer {
     color: rgba(255,255,255,1.00);
     font-weight: 500;
 }
-
-
