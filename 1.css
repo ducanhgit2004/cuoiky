@@ -100,7 +100,7 @@ header .login-btn:hover {
 }
 
 header .register-btn {
-    width: 90px;
+    width: 100px;
     background-color: rgb(16, 151, 214);
     display: flex;
     justify-content: center;
@@ -247,7 +247,7 @@ main .custom-banner {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-left: 350px;
+    padding-left: 30px;
     padding-top: 8px;
     position: relative; /* Add this line to position promo-footer correctly */
 }
